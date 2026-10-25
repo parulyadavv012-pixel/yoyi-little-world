@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Something for Yoyi 🎀</title>
+    <meta name="description" content="A little corner of the internet made with love, just for Yoyi.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+    <script src="./script.js?v=2" defer></script>
+</head>
+
+<body>
+
+    <div class="background-decoration decoration-one"></div>
+    <div class="background-decoration decoration-two"></div>
+    <div class="background-decoration decoration-three"></div>
+
+    <div class="floating-decorations" id="floatingDecorations"></div>
+
+    <main class="page-wrapper">
+
+        <!-- HEADER -->
+        <header class="top-bar">
+
+            <a href="#" class="brand" id="brandHome" aria-label="Yoyi's little world">
+                <span class="brand-bow">🎀</span>
+                <span>yoyi's little world</span>
+            </a>
+
+            <div class="top-note">
+                <span class="tiny-heart">♥</span> made with love
+            </div>
+
+        </header>
+
+
+        <!-- SCREEN 1: WELCOME SCREEN -->
+        <section class="welcome-section" id="welcomeScreen">
+
+            <div class="scrapbook-card">
+
+                <span class="sticker sticker-star" aria-hidden="true">✦</span>
+                <span class="sticker sticker-heart" aria-hidden="true">♡</span>
+                <span class="sticker sticker-flower" aria-hidden="true">✿</span>
+
+                <div class="welcome-content">
+
+                    <div class="little-label">
+                        <span>♡</span>
+                        A LITTLE SOMETHING FOR YOU
+                        <span>♡</span>
+                    </div>
+
+                    <h1>
+                        Hey Meri
+                        <span class="yoyi-heading">Yoyi</span>
+                        <span class="heading-bow" aria-hidden="true">🎀</span>
+                    </h1>
+
+                    <div class="handwritten-note">
+                        <span class="note-line"></span>
+                        just because you're you
+                        <span class="note-line"></span>
+                    </div>
+
+                    <p class="intro-text">
+                        I made a little something for you.<br>
+                        So go on and open it 🤎
+                    </p>
+
+                    <button
+                        class="open-button"
+                        id="openButton"
+                        type="button"
+                        aria-controls="letterScreen"
+                        aria-expanded="false"
+                    >
+                        <span>Open this little thing</span>
+                        <span class="button-envelope" aria-hidden="true">💌</span>
+                    </button>
+
+                    <p class="tiny-caption">
+                        no special occasion, just you &amp; me ♡
+                    </p>
+
+                </div>
+
+
+                <!-- HELLO KITTY ILLUSTRATION -->
+                <div class="welcome-art">
+
+                    <div class="art-sun"></div>
+
+                    <div class="photo-frame">
+
+                        <div class="frame-tape"></div>
+
+                        <div class="kitty-scene">
+
+                            <div class="kitty-sparkle sparkle-one">✦</div>
+                            <div class="kitty-sparkle sparkle-two">✧</div>
+                            <div class="kitty-sparkle sparkle-three">♡</div>
+
+                            <div class="kitty-ear ear-left"></div>
+                            <div class="kitty-ear ear-right"></div>
+
+                            <div class="kitty-head">
+
+                                <div class="kitty-bow">
+                                    <span class="bow-loop bow-left"></span>
+                                    <span class="bow-loop bow-right"></span>
+                                    <span class="bow-center"></span>
+                                </div>
+
+                                <div class="kitty-eye eye-left"></div>
+                                <div class="kitty-eye eye-right"></div>
+
+                                <div class="kitty-nose"></div>
+
+                                <div class="kitty-whiskers whiskers-left">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="kitty-whiskers whiskers-right">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+
+                                <div class="kitty-blush blush-left"></div>
+                                <div class="kitty-blush blush-right"></div>
+
+                            </div>
+
+                            <div class="kitty-body">
+                                <div class="kitty-dress"></div>
+                                <div class="kitty-foot foot-left"></div>
+                                <div class="kitty-foot foot-right"></div>
+                            </div>
+
+                            <div class="scene-heart heart-one">♥</div>
+                            <div class="scene-heart heart-two">♥</div>
+
+                        </div>
+
+                        <div class="frame-caption">
+                            <span>little things,</span>
+                            <span>big love ♡</span>
+                        </div>
+
+                    </div>
+
+                    <div class="art-side-note note-top">
+                        <span>✿</span> for my favourite
+                    </div>
+
+                    <div class="art-side-note note-bottom">
+                        <span>♡</span> bestie forever
+                    </div>
+
+                </div>
+
+
+                <div class="card-bottom-decoration">
+                    <span>♡</span>
+                    <span class="bottom-dotted-line"></span>
+                    <span>🎀</span>
+                    <span class="bottom-dotted-line"></span>
+                    <span>♡</span>
+                </div>
+
+            </div>
+
+            <div class="page-footer">
+                <span>♡</span>
+                a tiny corner of the internet, just for yoyi
+                <span>♡</span>
+            </div>
+
+        </section>
+
+
+        <!-- SCREEN 2: LETTER SCREEN -->
+        <section
+            class="letter-section screen-hidden"
+            id="letterScreen"
+            aria-labelledby="letterTitle"
+        >
+
+            <article class="letter-card">
+
+                <div class="letter-decoration">✧･ﾟ: *✧･ﾟ:* 💌</div>
+
+                <p class="letter-eyebrow">
+                    A LITTLE LETTER, JUST FOR YOU
+                </p>
+
+                <h2 class="letter-title" id="letterTitle">
+                    A Letter About
+                    <span>Your Importance</span> ♡
+                </h2>
+
+                <div class="letter-divider">
+                    <span></span>
+                    <span class="letter-divider-heart">♡</span>
+                    <span></span>
+                </div>
+
+
+                <!-- YOUR LETTER -->
+                <div class="letter-body">
+
+                    <p>
+                        Baby uk what sometimes I wonder how you became such an
+                        important part of my life without me even realising it 😭💗
+                    </p>
+
+                    <p>
+                        You're not just someone I talk to every day. You're
+                        someone who can make my mood better without even trying.
+                        One thing I love about you is how comfortable I feel
+                        around you. I can tell you the most random things and
+                        talk absolute nonsense with you and somehow you never
+                        get boring 😭
+                    </p>
+
+                    <p>
+                        I love how we can talk about something serious one
+                        minute and start laughing over the stupidest thing the
+                        next. I don't think you realise how happy I feel when
+                        I get to share even the smallest things with you.
+                        And honestly I'm so glad life gave me a friend like you.
+                        You make even the most ordinary days feel a little more
+                        special and I'm genuinely grateful for that.
+                    </p>
+
+                    <p>
+                        I hope we always stay like this. Same pagalpan and same
+                        gossip even when we're older. I hope we keep telling
+                        each other every little thing and never feel like we
+                        have to think twice before calling each other. No
+                        matter how much life changes I just want us to always
+                        have that comfort with each other.
+                    </p>
+
+                    <p>
+                        Love you so much meri jaan. I'm really happy you're a
+                        part of my life and if I had to choose my bestie all
+                        over again I'd still choose you. 🫂💗
+                    </p>
+
+                </div>
+
+
+                <p class="letter-signoff">
+                    always your person ♡
+                </p>
+
+                <button class="back-button" id="backButton" type="button">
+                    ← back to the beginning 🎀
+                </button>
+                
+                <button class="open-button" id="nextToThingsButton" type="button">
+    <span>One more thing...</span>
+    <span>💌</span>
+</button>
+
+            </article>
+
+
+            <div class="page-footer">
+                <span>♡</span>
+                a tiny corner of the internet, just for yoyi
+                <span>♡</span>
+            </div>
+
+        </section>
+        <!-- SECTION 3: THINGS I NEVER SAY OUT LOUD -->
+
+<section
+    class="letter-section screen-hidden"
+    id="thingsScreen"
+    aria-labelledby="thingsTitle"
+>
+    <article class="letter-card">
+
+        <div class="letter-decoration">✧･ﾟ: *✧･ﾟ:* 💗</div>
+
+        <p class="letter-eyebrow">
+            A LITTLE SOMETHING FROM MY HEART
+        </p>
+
+        <h2 class="letter-title" id="thingsTitle">
+            Things I Never
+            <span>Say Out Loud</span> 💌
+        </h2>
+
+        <div class="letter-divider">
+            <span></span>
+            <span class="letter-divider-heart">♡</span>
+            <span></span>
+        </div>
+
+        <div class="letter-body">
+
+            <p>
+                Uk what baby sometimes I feel like I don't tell you enough
+                how much you mean to me. And I'm not talking about all those
+                big emotional things. It's the little things too. Like how
+                I want to tell you every random thing that happens to me or
+                how something funny happens and I immediately think about
+                telling you 😭💗
+            </p>
+
+            <p>
+                I hope you know ki you can literally come to me with anything.
+                Chahe kitni bhi stupid baat ho ya kitna bhi bura din ho.
+                You don't have to think twice before telling me anything.
+                And please kabhi ye mat sochna ki you're bothering me by
+                sharing your problems. Pagal hai kya 😭 I'd rather listen
+                to you a hundred times than have you sit alone and overthink
+                everything.
+            </p>
+
+            <p>
+                And honestly I just want you to be happy. Like genuinely
+                happy. I want you to get everything you dream of and see
+                yourself doing things you once thought you couldn't.
+                I hope you never settle for less than what you deserve
+                and never let anyone make you feel like you're not good enough.
+            </p>
+
+            <p>
+                Also one thing I really wish is ki hum kabhi itne busy na
+                ho jaaye ki ek dusre ko random bakwaas batana band kar dein 😭
+                Imagine having a whole day full of things to tell you and
+                then realising we're too busy to talk. NAHHH I DON'T WANT
+                THAT 😭 I want us to keep annoying each other with the most
+                useless updates even when we're old.
+            </p>
+
+            <p>
+                And baby please never feel like you have to pretend to be
+                okay around me. Tu sad hai toh sad reh. Rona hai toh ro.
+                Kuch bolna nahi hai toh mat bol. I'll still be there.
+                You don't always have to explain yourself to me.
+            </p>
+
+            <p>
+                I might not say all this to you normally because ew emotional
+                baatein 😭🎀 but I really do wish the best for you in
+                everything. And I hope you always have reasons to smile
+                and people around you who love you the way you deserve
+                to be loved.
+            </p>
+
+            <p>
+                Bas itna yaad rakhna ki no matter how much life changes
+                I hope we never lose this stupid little bond of ours.
+                I want us to keep sharing gossip and making fun of people
+                and laughing at things nobody else understands 😭💋
+            </p>
+
+            <p>
+                Love you meri pagal aurat. Ab zyada emotional mat hona
+                ye sab padhke warna mujhe bhi rona aa jayega 😭🫂💗
+            </p>
+
+        </div>
+
+        <p class="letter-signoff">
+            always here for you, baby ♡
+        </p>
+
+        <div class="letter-navigation">
+
+            <button
+                class="back-button"
+                id="backToImportanceButton"
+                type="button"
+            >
+                ← back to the previous letter 💌
+            </button>
+
+            <button
+                class="open-button"
+                id="nextToOpenWhenButton"
+                type="button"
+            >
+                <span>There's more...</span>
+                <span>🎀</span>
+            </button>
+
+        </div>
+
+    </article>
+
+    <div class="page-footer">
+        <span>♡</span>
+        a tiny corner of the internet, just for yoyi
+        <span>♡</span>
+    </div>
+
+</section>
+
+<!-- SECTION 4: OPEN WHEN -->
+
+<section
+    class="letter-section screen-hidden"
+    id="openWhenScreen"
+    aria-labelledby="openWhenTitle"
+>
+    <article class="letter-card">
+
+        <div class="letter-decoration">✧･ﾟ: *✧･ﾟ:* 💌</div>
+
+        <p class="letter-eyebrow">LITTLE LETTERS FOR DIFFERENT DAYS</p>
+
+        <h2 class="letter-title" id="openWhenTitle">
+            Open When...
+            <span>♡</span>
+        </h2>
+
+        <p class="open-when-intro">
+            For the days when you need a little reminder
+            that you're loved, meri jaan. 🎀
+        </p>
+
+        <!-- ENVELOPE SELECTION -->
+        <div class="envelope-grid" id="envelopeGrid">
+
+            <button class="envelope-card" type="button" data-letter="sad">
+                <span class="envelope-icon">💌</span>
+                <span class="envelope-title">Open When You're Sad</span>
+                <span class="envelope-hint">a little hug for you ♡</span>
+            </button>
+
+            <button class="envelope-card" type="button" data-letter="miss">
+                <span class="envelope-icon">💌</span>
+                <span class="envelope-title">Open When You Miss Me</span>
+                <span class="envelope-hint">sending you a virtual hug 🫂</span>
+            </button>
+
+            <button class="envelope-card" type="button" data-letter="enough">
+                <span class="envelope-icon">💌</span>
+                <span class="envelope-title">Open When You Feel You're Not Enough</span>
+                <span class="envelope-hint">something you need to hear 💗</span>
+            </button>
+
+        </div>
+
+        <!-- LETTER: SAD -->
+        <div class="open-letter-content screen-hidden" id="letterSad">
+
+            <p class="letter-eyebrow">FOR MY BABY GIRL 🎀</p>
+
+            <h3 class="letter-title">
+                Open When You're Sad
+                <span>🫂</span>
+            </h3>
+
+            <div class="letter-divider">
+                <span></span><span class="letter-divider-heart">♡</span><span></span>
+            </div>
+
+            <div class="letter-body">
+
+                <p>Hey my baby girl! 🥹🎀</p>
+
+                <p>
+                    Remember that you are one of the most amazing people ever,
+                    okay? And no matter what happens I’m always here for you.
+                    Whenever you feel sad whenever life gets too much or
+                    whenever you just feel like crying come to me. You don’t
+                    have to hide your feelings from me.
+                </p>
+
+                <p>
+                    I promise I’ll try my very best to take away all your
+                    sadness and make you smile again. I wish I could keep
+                    every little thing that hurts you away from you. I never
+                    want to see that pretty face of yours looking sad. I just
+                    want you to be happy, always, because your happiness
+                    matters so much to me 🫂💗
+                </p>
+
+                <p>
+                    And remember meri jaan you never have to face anything
+                    alone. You have me always. Now give me a little smile
+                    okay? I love you so much my baby 🎀
+                </p>
+
+            </div>
+
+            <p class="letter-signoff">sending you the biggest hug ♡</p>
+
+            <button class="back-button back-to-envelopes" type="button">
+                ← back to my little letters 💌
+            </button>
+
+        </div>
+
+
+        <!-- LETTER: MISS ME -->
+        <div class="open-letter-content screen-hidden" id="letterMiss">
+
+            <p class="letter-eyebrow">A HUG UNTIL WE MEET AGAIN 🎀</p>
+
+            <h3 class="letter-title">
+                Open When You Miss Me
+                <span>🫂</span>
+            </h3>
+
+            <div class="letter-divider">
+                <span></span><span class="letter-divider-heart">♡</span><span></span>
+            </div>
+
+            <div class="letter-body">
+
+                <p>
+                    Awww, my baby misses me? Come here, let me give you the
+                    biggest hug everrr! 🥹🫂💗
+                </p>
+
+                <p>
+                    I love you soooo much my baby and guess what? I miss you
+                    toooooo! I wish I could be with you right now annoy you
+                    laugh with you over the most stupid things and make a
+                    thousand more memories with you.
+                </p>
+
+                <p>
+                    But just wait till we meet okay? We're gonna have SO MUCH
+                    MASTI! We'll laugh like idiots do the most pagal things
+                    annoy everyone around us and sabke naak mein dam kar
+                    denge. Nobody is getting peace when we're together samjhi?
+                    😭😭💗
+                </p>
+
+                <p>
+                    Until then imagine me giving you the tightest hug ever
+                    and refusing to let go. And remember distance doesn't
+                    change how much you mean to me.
+                </p>
+
+                <p>
+                    Missing you loads meri jaan Jaldi milte hain Ab ek virtual
+                    hug le aur smile kar! 🫂🎀💋
+                </p>
+
+            </div>
+
+            <p class="letter-signoff">virtual hugs, unlimited ♡</p>
+
+            <button class="back-button back-to-envelopes" type="button">
+                ← back to my little letters 💌
+            </button>
+
+        </div>
+
+
+        <!-- LETTER: NOT ENOUGH -->
+        <div class="open-letter-content screen-hidden" id="letterEnough">
+
+            <p class="letter-eyebrow">A LITTLE REMINDER FOR YOU 💗</p>
+
+            <h3 class="letter-title">
+                You Are Enough
+                <span>🎀</span>
+            </h3>
+
+            <div class="letter-divider">
+                <span></span><span class="letter-divider-heart">♡</span><span></span>
+            </div>
+
+            <div class="letter-body">
+
+                <p>Baby, look at me for a second okay? 🥹💗</p>
+
+                <p>
+                    You know what? I genuinely don't think I've ever met
+                    someone as amazing as you. And I'm SO glad that we became
+                    friends. Out of all the people I could've met I'm really
+                    happy that life brought me to you🎀
+                </p>
+
+                <p>
+                    You are so much more special than you realise and I wish
+                    you could see yourself through my eyes just once You'd
+                    understand why I appreciate you so much and why your
+                    presence means so much to me
+                </p>
+
+                <p>
+                    You don't have to be perfect to be loved. You don't have
+                    to prove your worth to anyone and you don't have to compare
+                    yourself with anybody else. You are enough exactly as you
+                    are. Even on the days when you doubt yourself even when
+                    you feel like you're falling behind even when you can't
+                    see anything good in yourself I'll still see the wonderful
+                    person you are.
+                </p>
+
+                <p>
+                    I'm so lucky to call you my bestie and I hope you never
+                    forget how precious you are to me. Please be a little
+                    kinder to yourself meri jaan You deserve the same love
+                    that you give to everyone else.
+                </p>
+
+                <p>
+                    And if you ever forget how amazing you are come to me.
+                    I'll remind you a thousand times if I have to. I love you
+                    my baby Always remember that. 🎀💌
+                </p>
+
+            </div>
+
+            <p class="letter-signoff">you'll always be enough ♡</p>
+
+            <button class="back-button back-to-envelopes" type="button">
+                ← back to my little letters 💌
+            </button>
+
+        </div>
+
+
+        <!-- SECTION 4 NAVIGATION -->
+        <div class="letter-navigation" id="openWhenNavigation">
+
+            <button class="back-button" id="backToThingsButton" type="button">
+                ← back to the previous letter
+            </button>
+
+            <button class="open-button" id="nextToLastThingButton" type="button">
+                <span>One last thing...</span>
+                <span>🎁</span>
+            </button>
+
+        </div>
+
+    </article>
+
+    <div class="page-footer">
+        <span>♡</span>
+        a tiny corner of the internet, just for yoyi
+        <span>♡</span>
+    </div>
+
+</section>
+<!-- SECTION 5: ONE LAST THING -->
+<section id="lastThingScreen" class="letter-section screen-hidden">
+
+    <div class="letter-card last-thing-card">
+        <p class="section-label">JUST ONE LAST THING 🎀</p>
+
+        <h2>One Last Thing… 🎁</h2>
+
+        <div class="letter-divider">♡ ── ♡</div>
+
+        <div class="last-thing-message">
+            <p>Okay so that's it I guess 😭💗</p>
+
+            <p>
+                Honestly pata nahi mujhe ye sab banane ka idea kaise aaya
+                but I really wanted to make something just for you.
+                Kuch aisa jo tu kabhi bhi open kare and smile kar de.
+            </p>
+
+            <p>
+                I know I don't say these things to you normally but I'm
+                really glad you're a part of my life. And I hope hum aage
+                bhi aise hi rahe with our random talks and endless gossip
+                and all our stupid little moments 😭🤎
+            </p>
+
+            <p>
+                Bas kabhi kabhi ye website khol lena jab bore ho rahi ho
+                ya mujhe miss kar rahi ho. Waise bhi tujhe pareshan karne
+                ke liye main toh hu hi 😭🤚🏻
+            </p>
+
+            <p>
+                And haan sach sach batana kaisi lagi ye website.
+                Itni mehnat ki hai maine ab jhoothi tareef bhi chalegi 😭💋
+            </p>
+
+            <p class="last-thing-ending">
+                Love you meri dillo 🫶🏻💗
+            </p>
+        </div>
+
+        <div class="last-thing-decoration">🎀 🤎 🎀</div>
+
+        <div class="last-thing-buttons">
+            <button type="button" id="backToOpenWhenButton" class="secondary-button">
+                Go back 💌
+            </button>
+
+            <button type="button" id="nextToMemoriesButton" class="primary-button">
+                Our memories 📸
+            </button>
+        </div>
+    </div>
+
+</section>
+<!-- SECTION 6: OUR LITTLE MEMORIES -->
+<section id="memoriesScreen" class="letter-section screen-hidden">
+
+    <div class="letter-card memories-card">
+
+        <p class="section-label">LITTLE MOMENTS, BIG MEMORIES 🎀</p>
+
+        <h2>Our Little Memories 📸</h2>
+
+        <div class="letter-divider">♡ ── ♡</div>
+
+        <p class="memories-intro">
+            A few little moments with my favourite person. 🤎
+            Here's to all the memories we've made and all the ones
+            waiting for us. 🫶🏻
+        </p>
+
+        <div class="memories-grid">
+
+            <div class="memory-item memory-one">
+                <div class="memory-photo">
+                    <img src="images/memory1.jpg" alt="Our first memory">
+                </div>
+                <p class="memory-caption">A little moment, forever mine ♡</p>
+            </div>
+
+            <div class="memory-item memory-two">
+                <div class="memory-photo">
+                    <img src="images/memory2.jpg" alt="A favourite memory together">
+                </div>
+                <p class="memory-caption">My favourite kind of chaos 🎀</p>
+            </div>
+
+            <div class="memory-item memory-three">
+                <div class="memory-photo">
+                    <img src="images/memory3.jpg" alt="A happy memory">
+                </div>
+                <p class="memory-caption">Us being us, as always 🤎</p>
+            </div>
+
+            <div class="memory-item memory-four">
+                <div class="memory-photo">
+                    <img src="images/memory4.jpg" alt="A special memory together">
+                </div>
+                <p class="memory-caption">One of many more to come 🫶🏻</p>
+            </div>
+
+        </div>
+
+        <p class="memories-ending">
+            No matter how many memories we make,<br>
+            you'll always be my Yoyi. 💗
+        </p>
+
+        <div class="last-thing-decoration">🎀 🤎 🎀</div>
+
+        <button type="button" id="backToLastThingButton" class="secondary-button">
+            One last thing... 💌
+        </button>
+
+    </div>
+
+</section>
+
+
+    </main>
+
+</body>
+</html>
